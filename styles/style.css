@@ -52,12 +52,13 @@ header {
 .view {
 	margin-top: 70px;
 }
-.landing-wraper {
+.landing-wrapper {
 	background: rgba(0, 0, 0, 0.89);
 }
 .landing-image {
 	width: 100vw;
 	height : 70vh;
-	background: url("../img/cars/Porsche2.jpg") center no-repeat;
+	background-image: url("");
+	background: center no-repeat;
 	background-size: auto 100%;
 }
