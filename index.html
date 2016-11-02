@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="main">
+<html lang="en" ng-app="main" >
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,11 +8,32 @@
 		<link rel="stylesheet" media="screen" href="./styles/reset.css">
 		<link rel="stylesheet" media="screen" href="./styles/style.css">
 	</head>
-	<body ng-controller="mainCtrl">
+	<body ng-controller="mainCtrl" >
 		
-		{{notWorking}}
+		<header>
+			<div class="nav">
+				<img class="logo" src="img/IACLogoOrgBeveledTranspBckgrnd%20copy.png">
+				<div class="menu">
+					<a ui-sref="home"><h2>Home</h2></a>
+					<a ui-sref="restoration"><h2>Restoration</h2></a>
+					<a ui-sref="services"><h2>Services</h2></a>
+					<a ui-sref="contact"><h2>Contact</h2></a>
+				</div>
+			</div>
+		</header>
+		
+		<ui-view>
+		
+		</ui-view>
+		
+		
+		<footer>
+		
+		
+		</footer>
 		
 		<script src="app/angular.js"></script>
+		<script src="app/ui-router.js"></script>
 		<script src="app/app.js"></script>
 		<script src="app/mainCtrl.js"></script>
 		<script src="app/mainServc.js"></script>

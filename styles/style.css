@@ -1,0 +1,63 @@
+
+
+/*whole page stuffs*/
+
+body {
+	height: 200vh;
+	background: url("../img/body-bg.jpg");
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+/* Nav Bar section */
+
+header {
+	background: rgba(0, 0, 0, 0.15);
+	height: 70px;
+	width: 100vw;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	
+}
+.nav {
+	width: 50vw;
+	min-width: 600px;
+	max-width: 700px;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu {
+	height: 100%;
+	width: 500px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	height: 100px;
+}
+
+
+/*View section*/
+
+
+.view {
+	margin-top: 70px;
+}
+.landing-wraper {
+	background: rgba(0, 0, 0, 0.89);
+}
+.landing-image {
+	width: 100vw;
+	height : 70vh;
+	background: url("../img/cars/Porsche2.jpg") center no-repeat;
+	background-size: auto 100%;
+}
