@@ -19,5 +19,6 @@ angular.module('main', ['ui.router']).config(function ($stateProvider, $urlRoute
 			.state('contact', {
 				url: '/contact',
 				templateUrl: 'views/contact.html'
-			})
+			});
+	$urlRouterProvider.otherwise('/')
 });
