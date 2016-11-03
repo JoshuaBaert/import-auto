@@ -61,8 +61,8 @@
                 <state relative-caret-position="600">
                   <caret line="500" column="0" selection-start-line="500" selection-start-column="0" selection-end-line="500" selection-end-column="0" />
                   <folding>
-                    <marker date="1478210366481" expanded="true" signature="8089:8124" ph="{...}" />
-                    <marker date="1478210366481" expanded="true" signature="9649:9652" ph="{...}" />
+                    <marker date="1478210772836" expanded="true" signature="8089:8124" ph="{...}" />
+                    <marker date="1478210772836" expanded="true" signature="9649:9652" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -83,8 +83,8 @@
           <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/views/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+                <state relative-caret-position="204">
+                  <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -119,8 +119,8 @@
               <file leaf-file-name="style.scss" pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/styles/style.scss">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="502">
-                      <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
+                    <state relative-caret-position="427">
+                      <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
                       <folding />
                     </state>
                   </provider>
@@ -193,10 +193,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/views/hours.html" />
-        <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/views/contact.html" />
         <option value="$PROJECT_DIR$/dist/js/bundle.js" />
         <option value="$PROJECT_DIR$/js/directive.js" />
+        <option value="$PROJECT_DIR$/views/home.html" />
         <option value="$PROJECT_DIR$/styles/style.scss" />
       </list>
     </option>
@@ -410,7 +410,7 @@
       <option name="presentableId" value="Default" />
       <updated>1478205554942</updated>
       <workItem from="1478205556042" duration="28000" />
-      <workItem from="1478205664575" duration="4985000" />
+      <workItem from="1478205664575" duration="5124000" />
     </task>
     <task id="LOCAL-00001" summary="Message">
       <created>1478205723085</created>
@@ -419,22 +419,29 @@
       <option name="project" value="LOCAL" />
       <updated>1478205723085</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Polished hours and contact">
+      <created>1478210695822</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1478210695822</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5013000" />
+    <option name="totallyTimeSpent" value="5152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-243" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15173867" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17009751" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -461,7 +468,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Message" />
+    <MESSAGE value="Polished hours and contact" />
+    <option name="LAST_COMMIT_MESSAGE" value="Polished hours and contact" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -505,8 +513,8 @@
         <state relative-caret-position="600">
           <caret line="500" column="0" selection-start-line="500" selection-start-column="0" selection-end-line="500" selection-end-column="0" />
           <folding>
-            <marker date="1478210366481" expanded="true" signature="8089:8124" ph="{...}" />
-            <marker date="1478210366481" expanded="true" signature="9649:9652" ph="{...}" />
+            <marker date="1478210772836" expanded="true" signature="8089:8124" ph="{...}" />
+            <marker date="1478210772836" expanded="true" signature="9649:9652" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -553,14 +561,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="151" column="12" selection-start-line="151" selection-start-column="12" selection-end-line="151" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
@@ -571,8 +571,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="6" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="204">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="162" column="2" selection-start-line="162" selection-start-column="2" selection-end-line="162" selection-end-column="2" />
           <folding />
         </state>
       </provider>
