@@ -15,7 +15,7 @@ angular.module('main')
 		.directive('hours', function () {
 			return {
 				restrict: 'A',
-				templateUrl: 'views/hours.html',
+				templateUrl: 'views/hours-mini.html',
 				link: function (scope, element, attrs) {
 					element.css('background', 'rgba(154, 143, 151, 0.79)');
 				}
@@ -24,9 +24,18 @@ angular.module('main')
 		.directive('contact', function () {
 			return {
 				restrict: 'A',
-				templateUrl: 'views/contact.html',
+				templateUrl: 'views/contact-mini.html',
 				link: function (scope, element, attrs) {
-//					element.css()
+					
+				}
+			}
+		})
+		.directive('services', function () {
+			return {
+				restrict: 'A',
+				templateUrl: 'views/services-mini.html',
+				link: function (scope, element, attrs) {
+					
 				}
 			}
 		});

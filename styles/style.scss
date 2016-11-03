@@ -29,49 +29,44 @@ a {
 header {
   background: rgba(0, 0, 0, 0.15);
   height: 70px;
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: center;
 
+  .nav {
+    width: 70vw;
+    min-width: 875px;
+    max-width: 1050px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: space-between;
+  }
+
+  #logo {
+    height: 200px;
+  }
+
+  #phone {
+    margin: 7px 10px 0px 0px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
 }
 
 
 
-.nav {
-  width: 70vw;
-  min-width: 875px;
-  max-width: 1050px;
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-
-
-
-.menu {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  /*align-items: center;*/
-  justify-content: space-between;
-}
-
-
-
-#logo {
-  height: 200px;
-}
-
-
-
-#phone {
-  margin: 7px 25px 0px 0px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
 
 
@@ -150,7 +145,6 @@ header {
 
 .contact-wrapper {
   background: rgba(154, 143, 151, 0.79);
-  margin: 0 0 0 15px;
   height: 250px;
   width: 300px;
   display: flex;
@@ -160,5 +154,17 @@ header {
 }
 
 .services-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 
+  .wrapper {
+    width: 57vw;
+    min-height: 100px;
+    background: $color4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
 }

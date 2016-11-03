@@ -37,7 +37,7 @@ angular.module('main').directive('homeBackground', function () {
 }).directive('hours', function () {
 	return {
 		restrict: 'A',
-		templateUrl: 'views/hours.html',
+		templateUrl: 'views/hours-mini.html',
 		link: function link(scope, element, attrs) {
 			element.css('background', 'rgba(154, 143, 151, 0.79)');
 		}
@@ -45,10 +45,14 @@ angular.module('main').directive('homeBackground', function () {
 }).directive('contact', function () {
 	return {
 		restrict: 'A',
-		templateUrl: 'views/contact.html',
-		link: function link(scope, element, attrs) {
-			//					element.css()
-		}
+		templateUrl: 'views/contact-mini.html',
+		link: function link(scope, element, attrs) {}
+	};
+}).directive('services', function () {
+	return {
+		restrict: 'A',
+		templateUrl: 'views/services-mini.html',
+		link: function link(scope, element, attrs) {}
 	};
 });
 'use strict';
