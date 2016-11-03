@@ -1,0 +1,164 @@
+
+
+$color1: #F79238;
+$color2: #9A8F97;
+$color3: #FFFFFF;
+$color4: #C3BABA;
+$color5: #E9E3E6;
+
+
+/*whole page stuffs*/
+
+body {
+  height: 200vh;
+  background: $color3;
+  box-sizing: border-box;
+}
+
+
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+/* Nav Bar section */
+
+header {
+  background: rgba(0, 0, 0, 0.15);
+  height: 70px;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+.nav {
+  width: 70vw;
+  min-width: 875px;
+  max-width: 1050px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.menu {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  /*align-items: center;*/
+  justify-content: space-between;
+}
+
+
+
+#logo {
+  height: 200px;
+}
+
+
+
+#phone {
+  margin: 7px 25px 0px 0px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+
+/*View section*/
+
+.view {
+  margin-top: 70px;
+}
+
+
+
+.landing-wrapper {
+  background: rgba(0, 0, 0, 0.89);
+}
+
+
+
+.landing-image {
+  width: 100vw;
+  height: 70vh;
+  /*background-image: url("");*/
+  background: no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* info */
+
+.info-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  h1 {
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  .inner {
+    width: 70vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.outer-hour-wrapper {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hour-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.day-list {
+  padding: 0;
+  height: auto;
+  width: auto;
+}
+
+.day-list-item {
+  display: flex;
+}
+
+.day {
+  width: 150px;
+}
+
+.contact-wrapper {
+  background: rgba(154, 143, 151, 0.79);
+  margin: 0 0 0 15px;
+  height: 250px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-main {
+
+}

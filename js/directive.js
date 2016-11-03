@@ -17,7 +17,7 @@ angular.module('main')
 				restrict: 'A',
 				templateUrl: 'views/hours.html',
 				link: function (scope, element, attrs) {
-					element.css('background', 'rgba(154, 143, 151, 0.79)')
+					element.css('background', 'rgba(154, 143, 151, 0.79)');
 				}
 			}
 		})
@@ -26,7 +26,7 @@ angular.module('main')
 				restrict: 'A',
 				templateUrl: 'views/contact.html',
 				link: function (scope, element, attrs) {
-					element.css('background', 'rgba(154, 143, 151, 0.79)')
+//					element.css()
 				}
 			}
 		});
