@@ -4,7 +4,7 @@
 
 body {
 	height: 200vh;
-	background: url("../img/body-bg.jpg");
+	/*background: url("../img/body-bg.jpg");*/
 }
 
 a {
@@ -25,9 +25,9 @@ header {
 	
 }
 .nav {
-	width: 50vw;
-	min-width: 600px;
-	max-width: 700px;
+	width: 70vw;
+	min-width: 875px;
+	max-width: 1050px;
 	height: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -35,14 +35,20 @@ header {
 
 .menu {
 	height: 100%;
-	width: 500px;
+	width: 100%;
 	display: flex;
-	align-items: center;
+	/*align-items: center;*/
 	justify-content: space-between;
 }
 
-.logo {
-	height: 100px;
+#logo {
+	height: 200px;
+}
+#phone {
+	margin: 7px 25px 0px 0px;
+	position: absolute;
+	top: 0;
+	right: 0;
 }
 
 
@@ -58,7 +64,39 @@ header {
 .landing-image {
 	width: 100vw;
 	height : 70vh;
-	background-image: url("");
-	background: center no-repeat;
-	background-size: auto 100%;
+	/*background-image: url("");*/
+	background: no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.contact-wrapper{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contact-wrapper h1 {
+	margin: 10px 0;
+	text-align: center;
+}
+.hour-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 300px;
+}
+
+.day-list {
+	padding: 0;
+	height: auto;
+	width: auto;
+}
+.day-list-item {
+	display: flex;
+}
+.day{
+	width: 150px;
 }

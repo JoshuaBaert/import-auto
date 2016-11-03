@@ -4,6 +4,8 @@
 
 angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 	
-	$scope.notWorking = 'Working'
+	$scope.notWorking = 'Working';
+	
+	$scope.schedule = mainServc.getSchedule();
 	
 });

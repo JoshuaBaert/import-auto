@@ -12,14 +12,17 @@
 		
 		<header>
 			<div class="nav">
-				<img class="logo" src="img/IACBanner1.png">
 				<div class="menu">
-					<a ui-sref="home"><h2>Home</h2></a>
-					<a ui-sref="restoration"><h2>Restoration</h2></a>
-					<a ui-sref="services"><h2>Services</h2></a>
-					<a ui-sref="contact"><h2>Contact</h2></a>
+					<a ui-sref="home"><img id="logo" src="img/IACBanner1.png"></a>
+					<a class="menu-item" ui-sref="home"><h2>Home</h2></a>
+					<a class="menu-item" ui-sref="restoration"><h2>Restoration</h2></a>
+					<a class="menu-item" ui-sref="services"><h2>Services</h2></a>
+					<a class="menu-item" ui-sref="contact"><h2>Contact</h2></a>
 				</div>
 			</div>
+			<h2 id="phone">Phone: <br>
+				801-374-8881
+			</h2>
 		</header>
 		
 		<ui-view>
@@ -28,8 +31,7 @@
 		
 		
 		<footer>
-		
-		
+			
 		</footer>
 		
 		<script src="app/angular.js"></script>
