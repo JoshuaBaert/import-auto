@@ -514,7 +514,9 @@ header {
   display: flex;
   justify-content: center; }
   .make-buttons-main .buttons-wrapper {
-    width: 50vw; }
+    width: 50vw;
+    display: flex;
+    justify-content: center; }
   .make-buttons-main .button-wrapper {
     width: 150px;
     height: 150px;

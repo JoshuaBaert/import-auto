@@ -54,6 +54,15 @@ angular.module('main').directive('homeBackground', function () {
 		templateUrl: 'views/services-mini.html',
 		link: function link(scope, element, attrs) {}
 	};
+}).directive('mapsClick', function () {
+	return {
+		restrict: 'A',
+		link: function link(scope, element, attrs) {
+			$(element).on('click', function () {
+				$('#map').css('pointer-events', 'none');
+			});
+		}
+	};
 });
 'use strict';
 
@@ -69,11 +78,7 @@ angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 
 	$scope.makes = mainServc.getMakes();
 
-	$scope.clickMe = function () {
-		$('map').css('pointer-events', 'auto');
-		console.log('clicked event');
-		return;
-	};
+	$scope.clickMe = function () {};
 });
 'use strict';
 

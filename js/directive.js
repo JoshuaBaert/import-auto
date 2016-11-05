@@ -38,4 +38,14 @@ angular.module('main')
 					
 				}
 			}
+		})
+		.directive('mapsClick', function () {
+			return {
+				restrict: 'A',
+				link: function (scope, element, attrs) {
+					$(element).on('click', function () {
+						$('#map').css('pointer-events', 'none')
+					});
+				}
+			}
 		});

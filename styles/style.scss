@@ -164,6 +164,8 @@ header {
   
   .buttons-wrapper {
     width: 50vw;
+    display: flex;
+    justify-content: center;
   }
   
   .button-wrapper{

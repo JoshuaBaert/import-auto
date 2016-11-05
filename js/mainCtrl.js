@@ -11,9 +11,7 @@ angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 	$scope.makes = mainServc.getMakes();
 	
 	$scope.clickMe = function () {
-		$('map').css('pointer-events', 'auto');
-		console.log('clicked event');
-		return;
+		
 	}
 	
 });
