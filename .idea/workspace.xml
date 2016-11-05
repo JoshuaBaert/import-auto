@@ -3,17 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c0d63f01-2b5e-4a92-bb6e-592c259246a8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/bundle.js" afterPath="$PROJECT_DIR$/dist/js/bundle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/maps/bundle.js.map" afterPath="$PROJECT_DIR$/dist/js/maps/bundle.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/maps/style.css.map" afterPath="$PROJECT_DIR$/dist/maps/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/style.css" afterPath="$PROJECT_DIR$/dist/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/app.js" afterPath="$PROJECT_DIR$/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mainCtrl.js" afterPath="$PROJECT_DIR$/js/mainCtrl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/mainServc.js" afterPath="$PROJECT_DIR$/js/mainServc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.scss" afterPath="$PROJECT_DIR$/styles/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home.html" afterPath="$PROJECT_DIR$/views/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/services-mini.html" afterPath="$PROJECT_DIR$/views/services-mini.html" />
     </list>
     <ignored path="import-auto.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -449,7 +438,7 @@
       <workItem from="1478228162695" duration="9000" />
       <workItem from="1478228189352" duration="1718000" />
       <workItem from="1478295752299" duration="8024000" />
-      <workItem from="1478307907995" duration="1274000" />
+      <workItem from="1478307907995" duration="1351000" />
     </task>
     <task id="LOCAL-00001" summary="Message">
       <created>1478205723085</created>
@@ -486,11 +475,18 @@
       <option name="project" value="LOCAL" />
       <updated>1478213637659</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="about us and partial google maps">
+      <created>1478310984209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1478310984209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18975000" />
+    <option name="totallyTimeSpent" value="19052000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-316" width="1936" height="1056" extended-state="6" />
@@ -530,7 +526,8 @@
     <MESSAGE value="Message" />
     <MESSAGE value="Polished hours and contact" />
     <MESSAGE value="started work on services-mini" />
-    <option name="LAST_COMMIT_MESSAGE" value="started work on services-mini" />
+    <MESSAGE value="about us and partial google maps" />
+    <option name="LAST_COMMIT_MESSAGE" value="about us and partial google maps" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
