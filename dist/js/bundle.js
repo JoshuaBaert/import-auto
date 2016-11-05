@@ -66,6 +66,14 @@ angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 	$scope.notWorking = 'Working';
 
 	$scope.schedule = mainServc.getSchedule();
+
+	$scope.makes = mainServc.getMakes();
+
+	$scope.clickMe = function () {
+		$('map').css('pointer-events', 'auto');
+		console.log('clicked event');
+		return;
+	};
 });
 'use strict';
 
@@ -75,7 +83,7 @@ angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 
 var makes = [{
 	make: 'volvo',
-	image: '../img/cars/volvo.jpg',
+	image: 'img/land-rover.png',
 	desc: ['paragraph 1', 'paragraph 2']
 }];
 

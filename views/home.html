@@ -11,11 +11,21 @@
 	</div>
 	
 	<div class="make-buttons-main">
-		
+		<div class="buttons-wrapper">
+			<div class="button-wrapper" ng-repeat="make in makes">
+				<img class="car-button" src="{{make.image}}">
+			</div>
+		</div>
 	</div>
 	
 	<div services>
-		
+	
+	</div>
+	
+	<div class="maps">
+		<!--<div class="map-overlay" onclick="style.pointerEvents='none'"></div>-->
+		<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1130.086854568715!2d-111.6572497427564!3d40.22785836284976!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4cda968124fedb34!2sImport+Auto+Center!5e0!3m2!1sen!2sus!4v1478306293034" frameborder="0" style="border:0"></iframe>
+		<button ng-click="clickMe()">log</button>
 	</div>
 
 </div>

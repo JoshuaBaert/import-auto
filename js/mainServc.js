@@ -5,12 +5,13 @@
 var makes = [
 	{
 		make: 'volvo',
-		image: '../img/cars/volvo.jpg',
+		image: 'img/land-rover.png',
 		desc: [
 			'paragraph 1',
 			'paragraph 2',
 		],
 	}
+	
 ];
 
 var schedule = [
