@@ -77,10 +77,10 @@ angular.module('main')
 					$(window).on('scroll', function () {
 						var winScroll = $(this).scrollTop();
 						
-						if (winScroll > 100) {
+						if (winScroll > 25) {
 							$('header').addClass('scroll-menu');
 							$('.logo').addClass('logo-small logo-black').removeClass('logo-large')
-						} if (winScroll <= 100) {
+						} if (winScroll <= 25) {
 							$('header').removeClass('scroll-menu');
 							$('.logo').removeClass('logo-small logo-black').addClass('logo-large')
 						}

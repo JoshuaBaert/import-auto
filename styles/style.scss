@@ -67,19 +67,16 @@ header {
   }
   
   .logo-large {
-    height: 300px;
+    height: 205px;
     transition: height .5s linear;
     content: url("../img/orangeLogo.png");
   }
   .logo-small {
-    height: $navSize;
+    height: ($navSize - 2px);
     width: auto;
     transition: height .5s linear;
     animation: shrink 1s linear 1;
     content: url("../img/blackLogo.png");
-    //transition-duration: .3s;
-    //transition-delay: .5s;
-    //transition-timing-function: ease-in;
   }
   
   #phone {
@@ -129,10 +126,13 @@ header {
 /* info */
 
 .info-wrapper {
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  
+  
   h1 {
     margin: 0;
     padding: 10px 0;
@@ -215,16 +215,17 @@ header {
   }
   
   .button-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-image: url("../img/make-btn-bg.jpg");
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
   .car-button {
-    width: 140px;
+    width: 225px;
   }
 }
 
@@ -240,6 +241,7 @@ header {
     padding: 15px;
     min-height: 100px;
     background: $color4;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -443,11 +443,11 @@ header {
     /*align-items: center;*/
     justify-content: space-between; }
   header .logo-large {
-    height: 300px;
+    height: 205px;
     transition: height .5s linear;
     content: url("../img/orangeLogo.png"); }
   header .logo-small {
-    height: 70px;
+    height: 68px;
     width: auto;
     transition: height .5s linear;
     animation: shrink 1s linear 1;
@@ -480,6 +480,7 @@ header {
 
 /* info */
 .info-wrapper {
+  margin-top: -50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -540,14 +541,15 @@ header {
     display: flex;
     justify-content: center; }
   .make-buttons-main .button-wrapper {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-image: url("../img/make-btn-bg.jpg");
+    border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center; }
   .make-buttons-main .car-button {
-    width: 140px; }
+    width: 225px; }
 
 .services-main {
   width: 100%;
@@ -558,6 +560,7 @@ header {
     padding: 15px;
     min-height: 100px;
     background: #CBF3F0;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center; }
