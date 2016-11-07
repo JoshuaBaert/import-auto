@@ -46,7 +46,7 @@ angular.module('main').directive('homeBackground', function () {
 	return {
 		restrict: 'A',
 		link: function link(scope, element, attrs) {
-			element.css('background-image', 'url("img/cars/bently.jpg")');
+			element.css('background-image', 'url("img/cars/healey.jpg")');
 			window.document.title = 'restoration Provo Auto Repair';
 		}
 	};
@@ -61,16 +61,12 @@ angular.module('main').directive('homeBackground', function () {
 }).directive('hours', function () {
 	return {
 		restrict: 'A',
-		templateUrl: 'views/hours-mini.html',
-		link: function link(scope, element, attrs) {
-			element.css('background', 'rgba(154, 143, 151, 0.79)');
-		}
+		templateUrl: 'views/hours-mini.html'
 	};
 }).directive('contact', function () {
 	return {
 		restrict: 'A',
-		templateUrl: 'views/contact-mini.html',
-		link: function link(scope, element, attrs) {}
+		templateUrl: 'views/contact-mini.html'
 	};
 }).directive('services', function () {
 	return {

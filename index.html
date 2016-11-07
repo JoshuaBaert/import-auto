@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="main" >
+<html lang="en" ng-app="main">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,13 +7,13 @@
 		<title>Provo Auto Repair, Audi, BMW, Jaguar, Mercedes-Benz, Volvo, Volkswagen, and all European Auto Repair in Provo Utah.</title>
 		<link rel="stylesheet" media="screen" href="dist/style.css">
 	</head>
-	<body ng-controller="mainCtrl" >
+	<body ng-controller="mainCtrl">
 		
 		<menu></menu>
 		
 		<header>
 			<div class="nav">
-
+				
 				<div class="menu">
 					<a ui-sref="home"><img class="logo logo-large"></a>
 					<a class="menu-item" ui-sref="home"><h2>Home</h2></a>
@@ -26,23 +26,28 @@
 		</header>
 		
 		<ui-view>
-			
+		
 		</ui-view>
 		
 		<footer>
-			<img src="img/certs.jpg" />
-			<div class="foot-contact">
-				<div><h4>
-					<strong>Import Auto center</strong><br>
-					44 East 400 South<br>
-					Provo, UT 846606
-				</h4></div>
-				
-				<div><h4>
-					Phone: 801-374-8881
-				</h4></div>
+			<img src="img/certs.jpg"/>
+			<div class="foot-orange">
+				<div class="foot-contact">
+					<div>
+						<h4>
+							<strong>Import Auto center</strong><br>
+							44 East 400 South<br>
+							Provo, UT 846606
+						</h4></div>
+					
+					<div>
+						<h4>
+							Phone: 801-374-8881
+						</h4>
+					</div>
+				</div>
 			</div>
-			
+		
 		</footer>
 		
 		<script
