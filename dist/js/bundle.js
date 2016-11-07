@@ -10,9 +10,9 @@ angular.module('main', ['ui.router']).config(function ($stateProvider, $urlRoute
 		templateUrl: 'views/home.html'
 	}).state('restoration', {
 		url: '/restoration',
-		templateURL: 'views/restoration.html'
+		templateUrl: 'views/restoration.html'
 	}).state('services', {
-		url: 'services',
+		url: '/services',
 		templateUrl: 'views/services.html'
 	}).state('contact', {
 		url: '/contact',
@@ -30,8 +30,32 @@ angular.module('main').directive('homeBackground', function () {
 	return {
 		restrict: 'A',
 		link: function link(scope, element, attrs) {
+			element.css('background-image', 'url("img/cars/saab.jpg")');
+			window.document.title = 'Home Provo Auto Repair';
+		}
+	};
+}).directive('contactBackground', function () {
+	return {
+		restrict: 'A',
+		link: function link(scope, element, attrs) {
 			element.css('background-image', 'url("img/cars/Porsche.jpg")');
-			window.document.title = 'Home';
+			window.document.title = 'Contact Provo Auto Repair';
+		}
+	};
+}).directive('restorationBackground', function () {
+	return {
+		restrict: 'A',
+		link: function link(scope, element, attrs) {
+			element.css('background-image', 'url("img/cars/bently.jpg")');
+			window.document.title = 'restoration Provo Auto Repair';
+		}
+	};
+}).directive('servicesBackground', function () {
+	return {
+		restrict: 'A',
+		link: function link(scope, element, attrs) {
+			element.css('background-image', 'url("img/cars/mercedes-benz.jpg")');
+			window.document.title = 'services Provo Auto Repair';
 		}
 	};
 }).directive('hours', function () {
@@ -56,10 +80,27 @@ angular.module('main').directive('homeBackground', function () {
 	};
 }).directive('mapsClick', function () {
 	return {
-		restrict: 'A',
+		restrict: 'EA',
 		link: function link(scope, element, attrs) {
 			$(element).on('click', function () {
-				$('#map').css('pointer-events', 'none');
+				$('#map').css('pointer-events', 'auto');
+			});
+		}
+	};
+}).directive('menu', function () {
+	return {
+		restrict: 'E',
+		link: function link(scope, element, attrs) {
+			$(window).on('scroll', function () {
+				var winScroll = $(this).scrollTop();
+
+				if (winScroll > 100) {
+					$('header').addClass('scroll-menu');
+					$('#logo-large').attr('id', 'logo-small');
+				}if (winScroll <= 100) {
+					$('header').removeClass('scroll-menu');
+					$('#logo-small').attr('id', 'logo-large');
+				}
 			});
 		}
 	};
@@ -72,13 +113,15 @@ angular.module('main').directive('homeBackground', function () {
 
 angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 
-	$scope.notWorking = 'Working';
-
 	$scope.schedule = mainServc.getSchedule();
 
 	$scope.makes = mainServc.getMakes();
 
-	$scope.clickMe = function () {};
+	$scope.clickMe = function () {
+		$('#map').on('click', function () {
+			$('#map').css('pointer-events', 'auto');
+		});
+	};
 });
 'use strict';
 

@@ -9,20 +9,20 @@
 	</head>
 	<body ng-controller="mainCtrl" >
 		
+		<menu></menu>
+		
 		<header>
 			<div class="nav">
 
 				<div class="menu">
-					<a ui-sref="home"><img id="logo" src="img/IACBanner1.png"></a>
+					<a ui-sref="home"><img id="logo-large" src="img/IACBanner1.png"></a>
 					<a class="menu-item" ui-sref="home"><h2>Home</h2></a>
 					<a class="menu-item" ui-sref="restoration"><h2>Restoration</h2></a>
 					<a class="menu-item" ui-sref="services"><h2>Services</h2></a>
 					<a class="menu-item" ui-sref="contact"><h2>Contact</h2></a>
 				</div>
 			</div>
-			<h2 id="phone">Phone: <br>
-				801-374-8881
-			</h2>
+			<h3 id="phone"><br>801-374-8881</h3>
 		</header>
 		
 		<ui-view>
@@ -31,10 +31,25 @@
 		
 		
 		<footer>
+			<img src="img/certs.jpg" />
+			<div class="foot-contact">
+				<div><h4>
+					<strong>Import Auto center</strong><br>
+					44 East 400 South<br>
+					Provo, UT 846606
+				</h4></div>
+				
+				<div><h4>
+					Phone: 801-374-8881
+				</h4></div>
+			</div>
 			
 		</footer>
 		
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
+		<script
+				src="https://code.jquery.com/jquery-3.1.1.js"
+				integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+				crossorigin="anonymous"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
 		<script src="dist/js/bundle.js"></script>

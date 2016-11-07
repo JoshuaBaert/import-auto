@@ -421,7 +421,8 @@ header {
   position: fixed;
   top: 0;
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  transition: all .5s ease-in; }
   header .nav {
     width: 70vw;
     min-width: 875px;
@@ -435,13 +436,21 @@ header {
     display: flex;
     /*align-items: center;*/
     justify-content: space-between; }
-  header #logo {
-    height: 200px; }
+  header #logo-large {
+    width: 400px;
+    transition: height .5s linear; }
+  header #logo-small {
+    height: 70px;
+    transition: height .5s linear; }
   header #phone {
     margin: 7px 10px 0px 0px;
     position: absolute;
     top: 0;
     right: 0; }
+
+.scroll-menu {
+  background-color: #F79238;
+  transition: all .5s ease-in; }
 
 /*View section*/
 .view {
@@ -553,12 +562,29 @@ header {
     border-radius: 20px;
     pointer-events: none; }
 
+.restoration-main {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  footer .foot-contact {
+    min-width: 440px;
+    width: 60vw;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between; }
+
 /*
 @media (max-width: ##px) {
 
 }
 */
-@media (max-width: 1200px) {
+@media (max-width: 1150px) {
   #phone {
     display: none; } }
 

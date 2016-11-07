@@ -11,10 +11,10 @@ angular.module('main', ['ui.router'])
 					})
 					.state('restoration', {
 						url: '/restoration',
-						templateURL: 'views/restoration.html',
+						templateUrl: 'views/restoration.html',
 					})
 					.state('services', {
-						url: 'services',
+						url: '/services',
 						templateUrl: 'views/services.html',
 					})
 					.state('contact', {

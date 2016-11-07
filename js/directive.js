@@ -7,8 +7,35 @@ angular.module('main')
 			return {
 				restrict: 'A',
 				link: function (scope, element, attrs) {
+					element.css('background-image', 'url("img/cars/saab.jpg")');
+					window.document.title = 'Home Provo Auto Repair'
+				}
+			}
+		})
+		.directive('contactBackground', function () {
+			return {
+				restrict: 'A',
+				link: function (scope, element, attrs) {
 					element.css('background-image', 'url("img/cars/Porsche.jpg")');
-					window.document.title = 'Home'
+					window.document.title = 'Contact Provo Auto Repair'
+				}
+			}
+		})
+		.directive('restorationBackground', function () {
+			return {
+				restrict: 'A',
+				link: function (scope, element, attrs) {
+					element.css('background-image', 'url("img/cars/bently.jpg")');
+					window.document.title = 'restoration Provo Auto Repair'
+				}
+			}
+		})
+		.directive('servicesBackground', function () {
+			return {
+				restrict: 'A',
+				link: function (scope, element, attrs) {
+					element.css('background-image', 'url("img/cars/mercedes-benz.jpg")');
+					window.document.title = 'services Provo Auto Repair'
 				}
 			}
 		})
@@ -41,11 +68,30 @@ angular.module('main')
 		})
 		.directive('mapsClick', function () {
 			return {
-				restrict: 'A',
+				restrict: 'EA',
 				link: function (scope, element, attrs) {
 					$(element).on('click', function () {
-						$('#map').css('pointer-events', 'none')
+						$('#map').css('pointer-events', 'auto');
 					});
+				}
+			}
+		})
+		.directive('menu', function () {
+			return {
+				restrict: 'E',
+				link: function (scope, element, attrs) {
+					$(window).on('scroll', function () {
+						var winScroll = $(this).scrollTop();
+						
+						if (winScroll > 100) {
+							$('header').addClass('scroll-menu');
+							$('#logo-large').attr('id', 'logo-small');
+						} if (winScroll <= 100) {
+							$('header').removeClass('scroll-menu');
+							$('#logo-small').attr('id', 'logo-large');
+						}
+						
+					})
 				}
 			}
 		});

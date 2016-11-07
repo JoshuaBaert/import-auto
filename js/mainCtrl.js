@@ -4,14 +4,14 @@
 
 angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
 	
-	$scope.notWorking = 'Working';
-	
 	$scope.schedule = mainServc.getSchedule();
 	
 	$scope.makes = mainServc.getMakes();
 	
 	$scope.clickMe = function () {
-		
+		$('#map').on('click', function () {
+			$('#map').css('pointer-events', 'auto')
+		});
 	}
 	
 });
