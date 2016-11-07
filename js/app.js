@@ -23,3 +23,4 @@ angular.module('main', ['ui.router'])
 					});
 			$urlRouterProvider.otherwise('/')
 		});
+

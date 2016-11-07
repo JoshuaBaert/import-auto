@@ -7,7 +7,16 @@ $color2: #9A8F97;
 $color3: #FFFFFF;
 $color4: #C3BABA;
 $color5: #E9E3E6;
+$navSize: 70px;
 
+@keyframes shrink {
+  0% {
+    content: url("../img/orangeLogo.png")
+  }
+  100% {
+    content: url("../img/blackLogo.png");
+  }
+}
 
 /*whole page stuffs*/
 
@@ -27,8 +36,8 @@ a {
 /* Nav Bar section */
 
 header {
-  background: rgba(0, 0, 0, 0.15);
-  height: 70px;
+  background: rgba(0, 0, 0, 0.50);
+  height: $navSize;
   width: 100%;
   position: fixed;
   top: 0;
@@ -53,14 +62,22 @@ header {
     justify-content: space-between;
   }
 
-  #logo-large {
-    width: 400px;
+  .logo-large {
+    height: 300px;
     transition: height .5s linear;
+    content: url("../img/orangeLogo.png");
   }
-  #logo-small {
-    height: 70px;
-    transition: height .5s linear;
+  .logo-small {
+    height: $navSize;
+    width: auto;
+    transition: height .5s linear ;
+    animation: shrink 1s linear 1;
+    content: url("../img/blackLogo.png");
+    //transition-duration: .3s;
+    //transition-delay: .5s;
+    //transition-timing-function: ease-in;
   }
+
 
   #phone {
     margin: 7px 10px 0px 0px;
@@ -82,7 +99,7 @@ header {
 /*View section*/
 
 .view {
-  margin-top: 70px;
+  margin-top: $navSize;
 }
 
 

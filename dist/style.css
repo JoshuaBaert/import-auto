@@ -403,6 +403,12 @@ template {
   display: none; }
 
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Fjalla+One");
+@keyframes shrink {
+  0% {
+    content: url("../img/orangeLogo.png"); }
+  100% {
+    content: url("../img/blackLogo.png"); } }
+
 /*whole page stuffs*/
 body {
   background: #FFFFFF;
@@ -415,7 +421,7 @@ a {
 
 /* Nav Bar section */
 header {
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.5);
   height: 70px;
   width: 100%;
   position: fixed;
@@ -436,12 +442,16 @@ header {
     display: flex;
     /*align-items: center;*/
     justify-content: space-between; }
-  header #logo-large {
-    width: 400px;
-    transition: height .5s linear; }
-  header #logo-small {
+  header .logo-large {
+    height: 300px;
+    transition: height .5s linear;
+    content: url("../img/orangeLogo.png"); }
+  header .logo-small {
     height: 70px;
-    transition: height .5s linear; }
+    width: auto;
+    transition: height .5s linear;
+    animation: shrink 1s linear 1;
+    content: url("../img/blackLogo.png"); }
   header #phone {
     margin: 7px 10px 0px 0px;
     position: absolute;

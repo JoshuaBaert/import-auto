@@ -96,10 +96,10 @@ angular.module('main').directive('homeBackground', function () {
 
 				if (winScroll > 100) {
 					$('header').addClass('scroll-menu');
-					$('#logo-large').attr('id', 'logo-small');
+					$('.logo').addClass('logo-small logo-black').removeClass('logo-large');
 				}if (winScroll <= 100) {
 					$('header').removeClass('scroll-menu');
-					$('#logo-small').attr('id', 'logo-large');
+					$('.logo').removeClass('logo-small logo-black').addClass('logo-large');
 				}
 			});
 		}
