@@ -7,7 +7,7 @@ angular.module('main')
 			return {
 				restrict: 'A',
 				link: function (scope, element, attrs) {
-					element.css('background-image', 'url("img/cars/saab.jpg")');
+					element.css('background-image', 'url("https://github.com/JoshuaBaert/import-auto/blob/master/img/cars/Saab.jpg?raw=true")');
 					window.document.title = 'Home Provo Auto Repair'
 				}
 			}
