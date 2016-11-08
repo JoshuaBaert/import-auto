@@ -12,14 +12,6 @@ var makes = [
 		],
 	},
 	{
-		make: 'Land Rover',
-		image: 'img/land-rover.png',
-		desc: [
-			'paragraph 1',
-			'paragraph 2',
-		],
-	},
-	{
 		make: 'funny',
 		image: 'img/cars/funny1.jpg',
 		desc: [
@@ -38,6 +30,14 @@ var makes = [
 	{
 		make: 'funny',
 		image: 'img/cars/funny3.jpg',
+		desc: [
+			'paragraph 1',
+			'paragraph 2',
+		],
+	},
+	{
+		make: 'Land Rover',
+		image: 'img/land-rover.png',
 		desc: [
 			'paragraph 1',
 			'paragraph 2',
