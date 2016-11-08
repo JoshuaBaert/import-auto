@@ -211,6 +211,7 @@ header {
   .buttons-wrapper {
     width: 50vw;
     display: flex;
+    flex-direction: row;
     justify-content: center;
   }
   
@@ -222,6 +223,15 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  
+  .button-wrapper:hover {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    -o-transform: scale(1.15);
+    transform: scale(1.15);
+    transition: transform .2s ease-in;
   }
   
   .car-button {

@@ -126,8 +126,24 @@ angular.module('main').controller('mainCtrl', function ($scope, mainServc) {
  */
 
 var makes = [{
-	make: 'volvo',
+	make: 'IAC',
+	image: 'img/IACcar.png',
+	desc: ['paragraph 1', 'paragraph 2']
+}, {
+	make: 'Land Rover',
 	image: 'img/land-rover.png',
+	desc: ['paragraph 1', 'paragraph 2']
+}, {
+	make: 'funny',
+	image: 'img/cars/funny1.jpg',
+	desc: ['paragraph 1', 'paragraph 2']
+}, {
+	make: 'funny',
+	image: 'img/cars/funny2.jpg',
+	desc: ['paragraph 1', 'paragraph 2']
+}, {
+	make: 'funny',
+	image: 'img/cars/funny3.jpg',
 	desc: ['paragraph 1', 'paragraph 2']
 }];
 
