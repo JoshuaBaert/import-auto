@@ -15,14 +15,7 @@ $color5: #873600;
 
 $navSize: 70px;
 
-@keyframes shrink {
-  0% {
-    content: url("../img/orangeLogo.png")
-  }
-  100% {
-    content: url("../img/blackLogo.png");
-  }
-}
+
 
 
 
@@ -96,15 +89,16 @@ header {
   .logo-large {
     height: 205px;
     transition: height .5s linear;
-    content: url("../img/orangeLogo.png");
+    //content: url("../img/orangeLogo.png");
   }
   .logo-small {
     height: ($navSize - 2px);
     width: auto;
     transition: height .5s linear;
-    animation: shrink 1s linear 1;
-    content: url("../img/blackLogo.png");
+    animation: 1s linear 1;
+    //content: url("../img/blackLogo.png");
   }
+  
   
   #phone {
     margin: 7px 10px 0px 0px;

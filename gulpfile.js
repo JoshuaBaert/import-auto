@@ -20,10 +20,6 @@ var cachebust = new CacheBuster();
 
 
 
-
-
-
-
 gulp.task('clean', function (cb) {
 	del([
 		'dist'
@@ -36,7 +32,8 @@ gulp.task('build-css', function () {
 			.pipe(sourcemaps.init())
 			.pipe(sass())
 			.pipe(autoPrefixer({
-				flexbox: false
+				browsers: ['last 8 versions'],
+				cascade: false
 			}))
 			.pipe(cachebust.resources())
 			.pipe(concat('style.css'))
@@ -45,11 +42,11 @@ gulp.task('build-css', function () {
 });
 
 
-gulp.task('build-js', function() {
+gulp.task('build-js', function () {
 	return gulp.src('js/**/*.js')
 			.pipe(sourcemaps.init())
 			.pipe(print())
-			.pipe(babel({ presets: ['es2015'] }))
+			.pipe(babel({presets: ['es2015']}))
 			.pipe(concat('bundle.js'))
 			//			.pipe(uglify())
 			.pipe(sourcemaps.write('./maps'))
@@ -57,7 +54,7 @@ gulp.task('build-js', function() {
 });
 
 
-gulp.task('build', [ 'clean', 'build-css', 'build-js'], function() {
+gulp.task('build', ['clean', 'build-css', 'build-js'], function () {
 	return gulp.src('index.html')
 			.pipe(cachebust.references())
 			.pipe(gulp.dest('dist'));
@@ -65,7 +62,7 @@ gulp.task('build', [ 'clean', 'build-css', 'build-js'], function() {
 
 
 
-gulp.task('watch', function() {
+gulp.task('watch', function () {
 	return gulp.watch(['./index.html', './styles/*.*css', './js/**/*.js'], ['build']);
 });
 

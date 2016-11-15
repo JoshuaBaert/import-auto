@@ -87,6 +87,9 @@ angular.module('main').directive('homeBackground', function () {
 	return {
 		restrict: 'E',
 		link: function link(scope, element, attrs) {
+			$(document).ready(function () {
+				$('.logo').attr('src', './img/orangeLogo.png');
+			});
 			$(window).on('scroll', function () {
 				var winScroll = $(this).scrollTop();
 				console.log(winScroll);
@@ -94,18 +97,17 @@ angular.module('main').directive('homeBackground', function () {
 				if (winScroll > 50) {
 					$('header').addClass('scroll-menu');
 					$('.logo').addClass('logo-small logo-black').removeClass('logo-large');
+					//							setTimeout(function () {
+					$('.logo').attr('src', './img/blackLogo.png');
+					//							}, 1000)
 				}if (winScroll <= 50) {
 					$('header').removeClass('scroll-menu');
 					$('.logo').removeClass('logo-small logo-black').addClass('logo-large');
-				}
+					//							setTimeout(function () {
+					$('.logo').attr('src', './img/orangeLogo.png');
+					//							}, 1000)
 
-				/*if (winScroll > 25 && winScroll < 100) {
-    	$('.logo-large').css('height', (205 - position )+'px')
-    } else if (winScroll <= 25) {
-    	$('.logo-large').css('height', '205px')
-    } else {
-    	$('.logo-large').css('height', '70px')
-    }*/
+				}
 			});
 		}
 	};
