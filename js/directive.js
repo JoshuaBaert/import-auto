@@ -76,14 +76,24 @@ angular.module('main')
 				link: function (scope, element, attrs) {
 					$(window).on('scroll', function () {
 						var winScroll = $(this).scrollTop();
+						console.log(winScroll);
 						
-						if (winScroll > 25) {
+						if (winScroll > 50) {
 							$('header').addClass('scroll-menu');
 							$('.logo').addClass('logo-small logo-black').removeClass('logo-large')
-						} if (winScroll <= 25) {
+						} if (winScroll <= 50) {
 							$('header').removeClass('scroll-menu');
 							$('.logo').removeClass('logo-small logo-black').addClass('logo-large')
 						}
+						
+						
+						/*if (winScroll > 25 && winScroll < 100) {
+							$('.logo-large').css('height', (205 - position )+'px')
+						} else if (winScroll <= 25) {
+							$('.logo-large').css('height', '205px')
+						} else {
+							$('.logo-large').css('height', '70px')
+						}*/
 						
 					})
 				}

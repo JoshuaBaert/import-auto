@@ -491,6 +491,7 @@ header {
     text-align: center; }
   .info-wrapper .inner {
     width: 70vw;
+    max-width: 1000px;
     display: flex;
     justify-content: space-around;
     align-items: center; }
