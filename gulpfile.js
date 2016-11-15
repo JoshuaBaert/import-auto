@@ -11,7 +11,8 @@ var gulp = require('gulp'),
 		uglify = require('gulp-uglify'),
 		concat = require('gulp-concat'),
 		print = require('gulp-print'),
-		babel = require('gulp-babel');
+		babel = require('gulp-babel'),
+		autoPrefixer = require('gulp-autoprefixer');
 
 
 var CacheBuster = require('gulp-cachebust');
@@ -34,6 +35,9 @@ gulp.task('build-css', function () {
 	return gulp.src('./styles/*')
 			.pipe(sourcemaps.init())
 			.pipe(sass())
+			.pipe(autoPrefixer({
+				flexbox: false
+			}))
 			.pipe(cachebust.resources())
 			.pipe(concat('style.css'))
 			.pipe(sourcemaps.write('./maps'))

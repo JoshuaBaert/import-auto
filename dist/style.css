@@ -403,6 +403,11 @@ template {
   display: none; }
 
 @import url("https://fonts.googleapis.com/css?family=Inconsolata|Fjalla+One");
+@-webkit-keyframes shrink {
+  0% {
+    content: url("../img/orangeLogo.png"); }
+  100% {
+    content: url("../img/blackLogo.png"); } }
 @keyframes shrink {
   0% {
     content: url("../img/orangeLogo.png"); }
@@ -428,6 +433,7 @@ header {
   top: 0;
   display: flex;
   justify-content: center;
+  -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in; }
   header .nav {
     width: 70vw;
@@ -442,15 +448,28 @@ header {
     display: flex;
     /*align-items: center;*/
     justify-content: space-between; }
+  header .menu-wrapper {
+    display: flex;
+    flex-direction: row; }
+  header .menu-item {
+    padding: 0 10px;
+    border-right: solid;
+    border-right-width: 4px;
+    -o-border-image: linear-gradient(to left, black, transparent) 1 100%;
+       border-image: -webkit-linear-gradient(right, black, transparent) 1 100%;
+       border-image: linear-gradient(to left, black, transparent) 1 100%; }
   header .logo-large {
     height: 205px;
+    -webkit-transition: height .5s linear;
     transition: height .5s linear;
     content: url("../img/orangeLogo.png"); }
   header .logo-small {
     height: 68px;
     width: auto;
+    -webkit-transition: height .5s linear;
     transition: height .5s linear;
-    animation: shrink 1s linear 1;
+    -webkit-animation: shrink 1s linear 1;
+            animation: shrink 1s linear 1;
     content: url("../img/blackLogo.png"); }
   header #phone {
     margin: 7px 10px 0px 0px;
@@ -460,6 +479,7 @@ header {
 
 .scroll-menu {
   background-color: #F79238;
+  -webkit-transition: all .5s ease-in;
   transition: all .5s ease-in; }
 
 /*View section*/
@@ -473,9 +493,6 @@ header {
   width: 100vw;
   height: 60vh;
   background: no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover; }
 
 /* info */
@@ -498,7 +515,7 @@ header {
 
 .outer-hour-wrapper {
   border-radius: 20px;
-  background: #CBF3F0;
+  background: #935116;
   width: 300px;
   height: 250px;
   display: flex;
@@ -524,7 +541,7 @@ header {
 
 .contact-wrapper {
   border-radius: 20px;
-  background: #CBF3F0;
+  background: #784212;
   height: 250px;
   width: 300px;
   display: flex;
@@ -552,13 +569,13 @@ header {
     align-items: center; }
   .make-buttons-main .button-wrapper:hover {
     -webkit-transform: scale(1.15);
-    -moz-transform: scale(1.15);
-    -ms-transform: scale(1.15);
-    -o-transform: scale(1.15);
-    transform: scale(1.15);
-    transition: transform .2s ease-in; }
+            transform: scale(1.15);
+    -webkit-transition: -webkit-transform .2s ease-in;
+    transition: -webkit-transform .2s ease-in;
+    transition: transform .2s ease-in;
+    transition: transform .2s ease-in, -webkit-transform .2s ease-in; }
   .make-buttons-main .car-button {
-    width: 225px; }
+    width: 215px; }
 
 .services-main {
   width: 100%;
@@ -568,7 +585,7 @@ header {
     width: 57vw;
     padding: 15px;
     min-height: 100px;
-    background: #CBF3F0;
+    background: #873600;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -599,7 +616,7 @@ header {
     width: 57vw;
     padding: 15px;
     min-height: 100px;
-    background: #CBF3F0;
+    background: #935116;
     display: flex;
     flex-direction: column;
     align-items: center; }
