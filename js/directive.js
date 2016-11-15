@@ -83,22 +83,19 @@ angular.module('main')
 						
 						if (winScroll > 50) {
 							$('header').addClass('scroll-menu');
-							$('.logo').addClass('logo-small logo-black').removeClass('logo-large')
-//							setTimeout(function () {
-								$('.logo').attr('src', './img/blackLogo.png');
-//							}, 1000)
-									
-						} if (winScroll <= 50) {
+							$('.logo').addClass('logo-small logo-black').removeClass('logo-large');
+							setTimeout(function () {
+									$('.logo').attr('src', './img/blackLogo.png');
+							}, 550)
+						}
+						if (winScroll <= 50) {
 							$('header').removeClass('scroll-menu');
 							$('.logo').removeClass('logo-small logo-black').addClass('logo-large');
-//							setTimeout(function () {
+							setTimeout(function () {
 								$('.logo').attr('src', './img/orangeLogo.png');
-//							}, 1000)
-									
+							},550);
 							
 						}
-						
-						
 					})
 				}
 			}

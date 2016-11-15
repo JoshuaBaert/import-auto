@@ -97,16 +97,15 @@ angular.module('main').directive('homeBackground', function () {
 				if (winScroll > 50) {
 					$('header').addClass('scroll-menu');
 					$('.logo').addClass('logo-small logo-black').removeClass('logo-large');
-					//							setTimeout(function () {
-					$('.logo').attr('src', './img/blackLogo.png');
-					//							}, 1000)
+					setTimeout(function () {
+						$('.logo').attr('src', './img/blackLogo.png');
+					}, 550);
 				}if (winScroll <= 50) {
 					$('header').removeClass('scroll-menu');
 					$('.logo').removeClass('logo-small logo-black').addClass('logo-large');
-					//							setTimeout(function () {
-					$('.logo').attr('src', './img/orangeLogo.png');
-					//							}, 1000)
-
+					setTimeout(function () {
+						$('.logo').attr('src', './img/orangeLogo.png');
+					}, 550);
 				}
 			});
 		}
